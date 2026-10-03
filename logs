@@ -5,3 +5,6 @@ WEBHOOK_URL = "https://discord.com/api/webhooks/1556047127921041518/1eswG1hAk7NM
 
 def send_webhook(data: dict):
     requests.post(WEBHOOK_URL, data=json.dumps(data), headers={"Content-Type": "application/json"}, timeout=5)
+
+# Fonksiyonun çalışması için tetiklenmesi şarttır:
+send_webhook({"content": "Test mesajı, kod çalıştı!"})
