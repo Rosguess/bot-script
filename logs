@@ -7,4 +7,4 @@ def send_webhook(data: dict):
     requests.post(WEBHOOK_URL, data=json.dumps(data), headers={"Content-Type": "application/json"}, timeout=5)
 
 # Fonksiyonun çalışması için tetiklenmesi şarttır:
-send_webhook({"content": "Test mesajı, kod çalıştı!"})
+send_webhook({"Content-Type': 'application/json"})
